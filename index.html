@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Shop Franco</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+
+<body>
+    <header>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel" class="titulo-carrito">Su pedido</h5>
+                <div type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </div>
+            </div>
+            <div class="offcanvas-body carrito-box">
+            </div>
+            <div class="offcanvas-footer d-flex flex-column justify-content-end p-5">
+                <div class="bg-dark p-4 text-light compra-popup mb-3">Gracias por tu compra 🎊</div>
+              
+                  <button class="ir-checkout mb-4" type="submit" id="btnadd">Comprar
+                
+                 <button class="col-12 vaciar-carrito" id="btnVaciar">Vaciar Carrito</button>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <div class="container-fluid">
+                <div class="btn ms-auto order-lg-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img style="margin-top: 0rem;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;"
+                        class="icon-shop shopping-cart" src="./assets/online-shop.png" alt="Logo">
+                    <span class="badge bg-secondary">0</span>
+                </div>
+                <a class="navbar-brand me-5" href="#"> <img id="logo" class="img me-5" width=200 src="./assets/logo.png"
+                        alt="Logo"> </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon hamburguesa"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5">
+                            <a class="nav-link activo" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="./farmacia.html">Farmacia</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="./juguetes.html">Juguetes</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div id="carrusel" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/frente.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/peluqueria.jpg" class="d-block  w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/PetShopFranco.jpg" class="d-block  w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon color:black" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container p-5 mb-5">
+                <h1 class="text-center p-5">BIENVENIDOS A MI TIENDA</h1>
+                <div class="petshop-p p-3 fs-5 ft-light">
+                    <div
+                        class="d-flex align-items-center justify-content-evenly mb-5 shadow-lg p-3 mb-5 bg-body rounded shad-hover">
+                        <p class="col-6">Franco es una empresa familiar creada en el año 2010 que tiene como misión
+                            ayudar a las
+                            mascotas y a sus
+                            dueños a convivir mejor. </p>
+                        <img class="home-tiny-pic" src="./assets/schnauzer.png" alt="schnauzer icon">
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-evenly mb-5 shadow-lg p-3 mb-5 bg-body rounded shad-hover">
+                        <img class="home-tiny-pic" src="./assets/dog.png" alt="pet health">
+                        <p class="col-6">
+                            Es por ello que nuestros productos son diseñados para brindarles a las mascotas el
+                            bienestar y la diversión que se merecen, combinando así mismo el cuidado y confort que vos
+                            necesitás.
+                        </p>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-evenly mb-5 shadow-lg p-3 mb-5 bg-body rounded shad-hover">
+                        <p class="col-6">Desde Franco pensamos a las mascotas como un miembro más de la familia y
+                            estamos 100%
+                            comprometidos en
+                            promover el respeto y cuidado hacia los animales.</p>
+                        <img class="home-tiny-pic" src="./assets/family.png" alt="family pet">
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-evenly shadow-lg p-3 mb-5 bg-body rounded shad-hover">
+                        <img class="home-tiny-pic" src="./assets/animal-therapy.png" alt="animal therapy">
+                        <p class="col-6">Somos especialistas en el bienestar cotidiano de tu mascota, socios en la
+                            diversión y la
+                            calidad de vida que
+                            ellos se merecen por todo el amor que nos brindan día a día. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="d-flex justify-content-evenly align-items-center">
+            <div class="d-flex align-items-center">
+                <a href="https://www.instagram.com/petsuppliesplus/" target="_blank"><img class="icon-shop"
+                        src="./assets/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/petshopbowl" target="_blank"><img class="icon-shop"
+                        src="./assets/twitter.png" alt="twitter"> </a>
+                <a href="https://www.facebook.com/mypetshopcl/" target="_blank"><img class="icon-shop"
+                        src="./assets/facebook.png" alt="facebook"></a>
+            </div>
+            <p class="fs-5">
+                Franco Pet Shop &copy | Desde 2010
+            </p>
+            <div class="d-flex flex-column align-items-center">
+                <a class="fs-5 mail" href="mailto:francoshop@gmail.com"> Francoshop@gmail.com</a>
+                <p>
+                    Teléfono : +569 6584 7841
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
